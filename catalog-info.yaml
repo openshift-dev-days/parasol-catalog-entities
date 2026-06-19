@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: parasol-insurance-entities
+  description: Shared Parasol Insurance catalog entities
+spec:
+  targets:
+    - ./system.yaml
+    - ./api.yaml
+    - ./resources.yaml
+    - ./llm-inference-server/resource.yaml
