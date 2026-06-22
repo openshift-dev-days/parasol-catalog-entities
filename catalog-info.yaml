@@ -7,6 +7,5 @@ spec:
   targets:
     - ./system.yaml
     - ./api.yaml
-    - ./components.yaml
     - ./resources.yaml
     - ./llm-inference-server/resource.yaml
