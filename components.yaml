@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: parasol-insurance
+  title: Parasol Insurance
+  description: Parasol Insurance claims management application
+  annotations:
+    backstage.io/kubernetes-id: parasol-insurance
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=parasol-insurance
+    jira/project-key: PARASOL
+    quay.io/repository-slug: parasol/parasol-insurance
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/users
+  system: parasol-insurance
+  providesApis:
+    - parasol-insurance-api
